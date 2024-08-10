@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+<div id="root"> 
+    root
+    <button id="btn" class="p-[5vw]">child
+
+        <div id="grand" class="m-[6vw]">grandchild</div>
+    </button>
+</div>
+
+    <!-- <rahul>hello </rahul><rahul>hello</rahul> -->
+    <!-- <button id="changeColorButton">Change Background Color</button> -->
+    <script >
+        const b1=document.querySelector('#root');
+        const b2=document.querySelector('#btn');
+        const b3=document.querySelector('#grand');
+        b1.addEventListener('click',()=>{
+            console.log("root is clicked");
+
+        },true)
+        b2.addEventListener('click',()=>{
+            console.log("child is clicked");
+        },true)
+        b3.addEventListener('click',()=>{
+            console.log("grand child is clicked");
+        })
+    </script>
+    
+    
+</body>
+</html>

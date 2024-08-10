@@ -1,0 +1,19 @@
+.customerde {
+  display: flex;
+  flex-direction: column;
+}
+.customername {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 3 rem;
+}
+/* .cf {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+.cl {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+} */
